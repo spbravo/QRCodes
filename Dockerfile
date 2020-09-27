@@ -1,6 +1,6 @@
 FROM golang:1.14
 
-WORKDIR /QRCodes/src/QRCodes
+WORKDIR /QRCodes
 COPY . .
 
 RUN go get -d -v ./...
