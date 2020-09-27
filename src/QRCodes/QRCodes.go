@@ -10,7 +10,7 @@ import (
 
 func main() {
 	if len(os.Args) != 2 {
-		fmt.Fprintf(os.Stderr, "usage: QRCodes Something-to-Codify\n")
+		fmt.Fprintf(os.Stderr, "usage: QRCodes Something-to-Codify \n")
 		os.Exit(1)
 	}
 	//var png []byte
