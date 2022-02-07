@@ -14,5 +14,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push
       run: |    
-        docker image build -t ghrc.io/spbravo/gitops:qrcode1.9 .
-        docker push ghrc.io/spbravo/gitops:qrcode1.9
+        docker image build -t ghcr.io/spbravo/gitops:qrcode1.9 .
+        docker push ghcr.io/spbravo/gitops:qrcode1.9
