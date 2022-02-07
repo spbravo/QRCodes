@@ -39,5 +39,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: santi
+          tags: ${{ env.REGISTRY }}/santi
           labels: ${{ steps.meta.outputs.labels }}
