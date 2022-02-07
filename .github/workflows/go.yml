@@ -39,5 +39,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/santi/DataMatrix:1.0
+          tags: ${{ env.REGISTRY }}/santi/datamatrix:1.0
           labels: ${{ steps.meta.outputs.labels }}
