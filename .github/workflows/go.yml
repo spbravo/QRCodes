@@ -13,6 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build & Push
-      run: |       
+      run: |    
+        docker login -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
         docker image build -t grc.io/spbravo/gitops:qrcode1.9 .
         docker push grc.io/spbravo/gitops:qrcode1.9
