@@ -12,8 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-      with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Build & Push
       run: |       
         docker image build -t spbravo/gitops:qrcode1.0 .
