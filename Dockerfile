@@ -1,4 +1,4 @@
-FROM golang:1.17 AS builder
+FROM  --platform=linux/amd64 golang:1.17 AS builder
 
 WORKDIR /go/src/QRCodes
 COPY . .
