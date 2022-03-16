@@ -1,4 +1,4 @@
-FROM golang:alpine AS builder
+FROM golang:1.17 AS builder
 
 WORKDIR /go/src/QRCodes
 COPY . .
