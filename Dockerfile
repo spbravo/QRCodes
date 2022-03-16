@@ -12,5 +12,6 @@ RUN go build -o /go/bin/main
 # Copy our static executable.
 #COPY --from=builder /go/bin/main /go/bin/main
 # Run the main binary.
+EXPOSE 10000
 ENTRYPOINT ["/go/bin/main"]
 
