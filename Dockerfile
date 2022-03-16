@@ -8,9 +8,9 @@ RUN go build -o /go/bin/main
 ############################
 # STEP 2 build a small image
 ############################
-FROM scratch
+#FROM scratch
 # Copy our static executable.
-COPY --from=builder /go/bin/main /go/bin/main
+#COPY --from=builder /go/bin/main /go/bin/main
 # Run the main binary.
 ENTRYPOINT ["/go/bin/main"]
 
