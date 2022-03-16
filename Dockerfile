@@ -2,7 +2,6 @@ FROM  --platform=linux/arm64 golang:1.17 AS builder
 
 WORKDIR /go/src/QRCodes
 COPY . .
-RUN ln -s /lib/libc.musl-x86_64.so.1 /lib/ld-linux-x86-64.so.2
 RUN go get -d -v ./...
 
 # Build the binary.
